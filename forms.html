@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PAYMENT FORM</title>
+    </head>
+
+    <body>
+        <form action="">
+            
+            <fieldset><h1 align="center">Payment Form</h1></fieldset>
+            <h2>User Details :</h2>
+            <fieldset>
+            <p>
+                <b>First name :</b> <input type="text" name="name" required>
+                <b>Last name :</b> <input type="text" name="name" required>
+            </p>
+            
+            <p>
+                <legend><b>Gender :</b></legend>
+                Male<input type="radio" name="Gender" required>
+                Female<input type="radio" name="Gender" required>
+                Others<input type="radio" name="Gender" required>
+            </p>
+            <p><b>Contact no : </b><input type="number" name ="number" id="number" required></p>
+            <p><b>Address: </b><textarea name="address" id="address" cols="80" rows="5" required></textarea></p>
+            <p><b>Pincode : </b><input type="number" name ="number" id="number" required></p>
+            <p><b>Email : </b> <input type="email" name ="email" id="email" required></p>
+        </fieldset>
+
+        <h2>Payment Details :</h2>
+        <fieldset>
+            <p>
+                <b>Card Type : </b> 
+                <select name="card_type" id="card_type" required>
+                    <option value="" >--Select card type--</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="visa">Visa</option>
+                    <option value="rupay">Rupay</option>
+                </select>
+            </p>
+            <p><b>Card Number : </b><input type="number" name="card_number" id="card_number" required></p>
+            <p><b>Expiration Date : </b><input type="month" name="expiry_date" id="expiry_date" required></p>
+            <p><b>CVV number : </b><input type="password" name="cvv" id="cvv" required></p> 
+        </fieldset>
+        <p>After filling the required details click the below Pay Now Button.</p>
+        <input type="submit" value="Pay Now">
+        </form>
+    </body>
+</html>
